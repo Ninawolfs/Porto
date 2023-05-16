@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="pt-10 pb-24 bg-deep-blue">
+    <section id="skills" className="pt-10 pb-24">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
@@ -24,15 +24,15 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-          Proficient in HTML, CSS, and JavaScript, with a strong foundation in
+            Proficient in HTML, CSS, and JavaScript, with a strong foundation in
             web development. Experience in creating responsive and visually
-            appealing websites using Bootstrap & Tailwind CSS,
-            allowing for rapid development of custom user interfaces with
-            utility-first approach. Skilled in building dynamic and interactive user
+            appealing websites using Bootstrap & Tailwind CSS, allowing for
+            rapid development of custom user interfaces with utility-first
+            approach. Skilled in building dynamic and interactive user
             interfaces using React, with expertise in component-based
             architecture and state management. Familiar with React Native for
-            cross-platform mobile apps, and adept at API
-            integration for seamless data communication and real-time updates.
+            cross-platform mobile apps, and adept at API integration for
+            seamless data communication and real-time updates.
           </p>
         </motion.div>
 
@@ -75,10 +75,12 @@ const MySkills = () => {
                 Experience
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]">
+              {" "}
+            </div>
           </div>
           <p className="mt-5">
-          My journey as a beginning front-end developer is an exciting and
+            My journey as a beginning front-end developer is an exciting and
             dynamic one. I started by diving into the fundamentals of HTML, CSS,
             and JavaScript, gradually expanding my knowledge and proficiency in
             these languages. Along the way, I discovered the power of frameworks
@@ -108,10 +110,10 @@ const MySkills = () => {
                 Innovative
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]"></div>
           </div>
           <p className="mt-5">
-          By staying curious, constantly learning, and embracing emerging
+            By staying curious, constantly learning, and embracing emerging
             trends, you can contribute to shaping the future of digital
             innovation and drive meaningful change in the online world. As a
             starting front-end developer, I'm at the forefront of innovation and
@@ -142,7 +144,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-          Web development and imagination share a profound connection. Web
+            Web development and imagination share a profound connection. Web
             development empowers you to turn imagination into reality, making
             the digital landscape a more imaginative and vibrant place.Through
             your imagination, you can envision captivating user interfaces,
