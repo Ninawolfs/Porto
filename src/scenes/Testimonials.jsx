@@ -16,8 +16,8 @@ const Testimonials = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl mb-5 text-red">
-          TESTIMONIALS
+        <p className="font-playfair font-semibold text-4xl mb-5">
+          TEST <span className="text-red">IMMONIALS</span>
         </p>
         <LineGradient width="mx-auto w-2/5" />
         <p className="mt-10">
