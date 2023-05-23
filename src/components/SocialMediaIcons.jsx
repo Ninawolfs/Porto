@@ -1,4 +1,5 @@
 import React from "react";
+import {AiFillGithub} from 'react-icons/ai';
 
 function SocialMediaIcons() {
   return (
@@ -12,12 +13,12 @@ function SocialMediaIcons() {
         <img src="../assets/linkedin.png" alt="linkedin-link" />
       </a>
       <a
-        className="hover:opacity-50 transition duration-500"
-        href="https://www.twitter.com"
+        className="hover:opacity-50 transition duration-500 cursor-pointer"
+        href="https://github.com/Ninawolfs"
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="twitter-link" src="../assets/twitter.png" />
+        <AiFillGithub size={30}/>
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
