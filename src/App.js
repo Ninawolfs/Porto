@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-deep-blue">
+    <div className="bg-deep-blue relative z-[-10]">
       <div className="app ">
       {" "}
       <Navbar
