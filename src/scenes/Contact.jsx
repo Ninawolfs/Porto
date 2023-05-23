@@ -1,7 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import BnW from '../assets/BnW.png'
+import BnWLayer from '../assets/BnWLayer.png'
 
 const Contact = () => {
   const {
@@ -43,7 +43,7 @@ const Contact = () => {
       </motion.div>
 
       {/* FORM & IMAGE */}
-      <div className="md:flex md:justify-between gap-16 mt-5">
+      <div className="md:flex md:justify-between gap-16 mt-5 ">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -55,7 +55,10 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src={BnW} alt="contact" className="hover:filter hover:saturate-200" />
+          <div className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
+              before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]">
+          <img src={BnWLayer} alt="contact" className="border: {Linegradient} " />
+          </div>
         </motion.div>
 
         <motion.div
@@ -128,7 +131,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="p-5 bg-red font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
               type="submit"
             >
               SEND ME A MESSAGE

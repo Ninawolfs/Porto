@@ -2,7 +2,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import SocialMediaIcons from "../components/SocialMediaIcons";
-import NINAw from '../assets/NINAw.png';
+import NinawRoseCrop from '../assets/NinawRoseCrop.png';
 
 
 
@@ -12,11 +12,12 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section id="home" className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10">
       {/* IMAGE SECTION */}
-      <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <div className="basis-1/5 mt-16 md:mt-32 flex justify-center md:order-2 relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
+              before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]">
         <img
           alt="profile"
-          className={`w-full ${isAboveLarge ? 'max-w-3xl' : 'max-w-xl'}`}
-          src={NINAw}
+          className={`w-full ${isAboveLarge ? 'max-w-3xl' : 'max-w-xl'} hover:filter hover:saturate-200 transition duration-500`}
+          src={NinawRoseCrop}
         />
       </div>
 
