@@ -12,6 +12,16 @@ function SocialMediaIcons() {
     window.open("https://github.com/Ninawolfs", "_blank");
   };
 
+  const handleDocumentDownload = () => {
+    const documentUrl = process.env.PUBLIC_URL + "/NWolfsCV.pdf";
+    const link = document.createElement("a");
+    link.href = documentUrl;
+    link.setAttribute("download", "NWolfsCV.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="flex justify-center md:justify-start my-10 gap-7">
       <a
@@ -30,19 +40,14 @@ function SocialMediaIcons() {
         <AiFillGithub size={30} />
       </a>
 
-      <a
+      <button
         className="hover:opacity-50 transition duration-500"
-        href="https://www.facebook.com"
-        target="_blank"
-        rel="noreferrer"
+        onClick={handleDocumentDownload}
       >
         <HiOutlineDocumentText size={30} />
-      </a>
+      </button>
     </div>
   );
 }
 
 export default SocialMediaIcons;
-
-
-

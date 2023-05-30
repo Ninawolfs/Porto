@@ -38,10 +38,8 @@ const MySkills = () => {
 
         <div className="mt-16 md:mt-0">
           {isAboveLarge ? (
-            <div
-              className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-              before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
-            >
+            <div className="relative z-0 ml-20">
+              <div className="absolute -top-10 -left-10 w-full h-full border-2 border-blue z-[-1]" />
               <img
                 alt="skills"
                 className="z-10"
@@ -69,14 +67,13 @@ const MySkills = () => {
           }}
         >
           <div className="relative h-32">
-            <div className="z-10">
+          <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[0]" />
+
+            <div className="absolute right-[-50] top-0">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Experience
               </p>
-            </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]">
-              {" "}
             </div>
           </div>
           <p className="mt-5">
@@ -104,13 +101,14 @@ const MySkills = () => {
           }}
         >
           <div className="relative h-32">
-            <div className="z-10">
+          <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[0]" />
+
+            <div className="absolute right-[-50] top-0">
               <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Innovative
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[0]"></div>
           </div>
           <p className="mt-5 z-[10]">
             By staying curious, constantly learning, and embracing emerging
@@ -134,14 +132,15 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
-            <div className="z-10">
+           <div className="relative h-32">
+          <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[0]" />
+
+            <div className="absolute right-[-50] top-0">
               <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Imaginative
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
             Web development and imagination share a profound connection. Web
@@ -158,3 +157,4 @@ const MySkills = () => {
 };
 
 export default MySkills;
+
