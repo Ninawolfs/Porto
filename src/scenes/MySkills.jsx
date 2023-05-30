@@ -110,9 +110,9 @@ const MySkills = () => {
                 Innovative
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]"></div>
+            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[0]"></div>
           </div>
-          <p className="mt-5">
+          <p className="mt-5 z-[10]">
             By staying curious, constantly learning, and embracing emerging
             trends, you can contribute to shaping the future of digital
             innovation and drive meaningful change in the online world. As a

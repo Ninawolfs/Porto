@@ -42,7 +42,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Welcome to my vibrant digital canvas, where my journey as a budding front-end developer comes to life and gives you a window into your world of creativity, innovation, and technical expertise.
+            Welcome to my vibrant digital canvas, where my journey as a budding front-end developer comes to life and gives you a window into my world of creativity, innovation, and technical expertise.
           </p>
         </motion.div>
 
